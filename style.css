@@ -1,0 +1,24 @@
+* { box-sizing: border-box; }
+
+body { 
+  margin: 0;
+}
+
+.navbar {
+  display: flex;
+}
+.navbar .container {
+  display: flex;
+  flex-flow: row wrap;
+  width: 80vw;
+  padding: 0;
+  margin: 0 auto;
+  background-color: bisque;
+}
+.navbar-logo + .nav-item-left {
+  justify-content: flex-start;
+  background-color: cornsilk;
+}
+.nav-item-right {
+  justify-content: flex-end;
+}
