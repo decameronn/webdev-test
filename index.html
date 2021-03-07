@@ -6,22 +6,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>noteX-wpa</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="manifest" href="manifest.json">
+  <link rel="manifest" href="manifest.webmanifest">
   <script defer src="index.js"></script>
 </head>
 <body>
 
-  <nav class="navbar">
+  <!-- navigation at the top -->
+  <nav class="navbar" role="navigation">
     <div class="container">
-      <ul id="navbar-logo">
-        <li class="navbar-brand">noteX</li>
-      </ul>
-      <ul id="navbar-left">
-        <li class="nav-item-left">Home</li>
-        <li class="nav-item-left">About</li>
-      </ul>
+      <div id="upper-container">
+        <ul id="navbar-left">
+          <li class="nav-item-left">noteX</li>
+          <li class="nav-item-left">Home</li>
+          <li class="nav-item-left">About</li>
+        </ul>
+        <ul class="navbar-right">
+          <li class="nav-right-item">Sign Up</li>
+          <li class="nav-right-item">Login</li>
+        </ul>
+      </div>
     </div>
   </nav>
 
+  <!-- main container for notes -->
+  <div class="notes-container">
+    <ul id="notes-area">
+      <li class="notebook-list">the list of notebooks</li>
+      <li class="notes-list">the list of notes in a notebook</li>
+      <li class="note-content">note content</li>
+    </ul>
+  </div>
 </body>
 </html>
