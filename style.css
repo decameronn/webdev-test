@@ -3,21 +3,36 @@
 body { 
   margin: 0;
 }
+ul {
+  list-style: none;
+}
 
 .navbar {
-  display: flex;
+  background-color: #f5f5f5;
 }
-.navbar .container {
-  display: flex;
-  flex-flow: row wrap;
+.container {
   width: 80vw;
   padding: 0;
   margin: 0 auto;
   background-color: bisque;
 }
-.navbar-logo + .nav-item-left {
+#upper-container {
+  display: inline-flex;
+}
+#navbar-left {
+  display: flex;
+  flex-flow: row wrap;
   justify-content: flex-start;
   background-color: cornsilk;
+  padding: 1em;
+}
+.nav-item-left {
+  min-width: 5vw;
+}
+#navbar-right {
+  display: flex;
+  justify-content: flex-end;
+  background-color:lavenderblush;
 }
 .nav-item-right {
   justify-content: flex-end;
